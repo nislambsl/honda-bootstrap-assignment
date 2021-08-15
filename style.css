@@ -1,4 +1,33 @@
 p{
     line-height: 70%;
     color: #E0E0E0;
+    
+}
+.filter{
+    filter: grayscale(90%);
+}
+.orange{
+    color:#E77457 ; 
+    font-weight: 600;
+}
+.user{
+    width: 150px;
+    height: 150px;
+    margin:auto;
+    margin-top: 40px;
+   
+}
+.p-text{
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+li{
+    display: inline;
+    color:#E77457 ; 
+    list-style: none;
+}
+.author{
+    text-align: center;
+    color: #43B3F2;
 }
