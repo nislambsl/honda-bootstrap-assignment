@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honda CBR Bootstrap Assignment</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/e568ca8a37.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,11 +19,36 @@
                 <p>Amet minim mollit non deserunt ullamco est sit aliqua </p>
                 <p>dolor do amet sint. Velit officia consequat duis enim velit </p>
                 <p>mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <button style="background-color: #E76F51;color: white; padding: 10px 45px; border-radius: 5px; border: none;">Purchase</button>
+
+                <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="purchase-btn">Purchase</button>             
+                
+<!-- Modal for purchase btn -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog text-dark">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Chose  your Dream Bike</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <samp class="mx-5">Bike-01</samp> <span class="mx-5">Price=$1500.00</span> <button type="button" class="btn-close" aria-label="Close"></button>
+        <br>
+        <samp class="mx-5">Bike-02</samp> <span class="mx-5">Price=$1700.00</span> <button type="button" class="btn-close" aria-label="Close"></button>
+        <br>
+        <samp class="mx-5">Bike-03</samp> <span class="mx-5">Price=$1900.00</span> <button type="button" class="btn-close" aria-label="Close"></button>
+        <br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
                
             </div>
             <div class="my-auto ms-0 py-5 w-50">
-                <button style="background-color: #E76F51; float:right; color: white; padding: 10px 30px; margin-right: 50px; border-radius: 5px; border: none;">Login</button>
+                <button class="login-btn" style="background-color: #E76F51; float:right; color: white; padding: 10px 30px; margin-right: 50px; border-radius: 5px; border: none;">Login</button>
                 <img src="images/header-bike.png" alt="">
             </div>
 
@@ -110,6 +135,38 @@
                     </div>
                   </div>
         </section>
+       
+    <section class="feature-part container">
+      <h1 class="fw-bold text-center my-5 py-5">Frequently Asked <span class="orange">Questions</span></h1>
+      <div class="d-flex">
+        <div class="w-50"><img class="img-fluid p-5 m-5" src="images/faq.png" alt="">
+        </div>
+       <div class="w-50 p-5">
+        <div class="g-3 p-3 m-3 question">
+          <h6>What are the most important things I should
+            know about riding a bike?</h6>
+            <p>Safety First! Always obey the rules of the road. Obey all traffic 
+              signals, signs, and laws. Get in the mindset of “driving” your 
+              bike—not just “riding” your bike.
+            </p>
+        </div>
+        <div class="g-3 p-3 m-3 question">
+          <h6>How can I tell if my helmet is old and I need a 
+
+          new one?</h6>
+        </div>
+        <div class="g-3 p-3 m-3 question">
+          <h6>My bike has been in storage is it safe to ride?</h6>
+        </div>
+        <div class="g-3 p-3 m-3 question">
+          <h6>What rules should I follow when riding my bike?</h6>
+        </div>
+     </div>
+        
+      </div>
+      
+    </section>
+        
 
     </main>
   
@@ -120,3 +177,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
+

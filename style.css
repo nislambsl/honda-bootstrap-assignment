@@ -1,3 +1,10 @@
+.purchase-btn{
+   background-color: #E76F51;
+   color: white; 
+   padding: 10px 45px; 
+   border-radius: 5px; 
+   border: none;
+}
 p{
     line-height: 70%;
     color: #E0E0E0;
@@ -30,4 +37,14 @@ li{
 .author{
     text-align: center;
     color: #43B3F2;
+}
+.feature-part{
+    height: 500px;
+    margin-bottom: 50px;
+}
+.question{
+    height: 20%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    
 }
