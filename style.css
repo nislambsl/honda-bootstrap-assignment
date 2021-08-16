@@ -1,10 +1,20 @@
-.purchase-btn{
+.top-banner{
+    background-color: #264653; 
+   
+
+}
+h1{font-size: 20px;
+    margin:30 auto;
+
+}
+
+.special-color-btn{
    background-color: #E76F51;
    color: white; 
-   padding: 10px 45px; 
-   border-radius: 5px; 
-   border: none;
+  
 }
+
+
 p{
     line-height: 70%;
     color: #E0E0E0;
@@ -40,11 +50,24 @@ li{
 }
 .feature-part{
     height: 500px;
-    margin-bottom: 50px;
+    
 }
 .question{
     height: 20%;
     border: 1px solid lightgrey;
     border-radius: 5px;
+    
+}
+
+/*    Responsive CSS start */
+@media only screen and (max-width: 568px){
+    .top-banner p{
+        line-height: 100%;
+        margin: 30px 20px;
+    }  
+    h1{
+    font-size: 15px;
+}     
+       
     
 }

@@ -11,8 +11,9 @@
 </head>
 <body>
     <header>
-        <section style="background-color: #264653; height: 698px;" class="container-fluid d-flex justify-content-between text-white">
-            <div class="my-auto ms-5 px-5 pt-3 w-50">
+        <section class="top-banner container-fluid text-white">
+            <div class="row d-flex align-items-center ms-5 ">
+              <div class="half-width col-md-6 ps-5">
                 <p>Computer-controlled digital transistorized with electronic advance</p>
                 <h1 class="fw-bold fs-1">Honda CBR 300R</h1>
                 <br>
@@ -20,9 +21,9 @@
                 <p>dolor do amet sint. Velit officia consequat duis enim velit </p>
                 <p>mollit. Exercitation veniam consequat sunt nostrud amet.</p>
 
-                <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="purchase-btn">Purchase</button>             
+                <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="special-color-btn btn border-0 py-2 px-3">Purchase</button>             
                 
-<!-- Modal for purchase btn -->
+<!-- Modal start for purchase btn -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog text-dark">
     <div class="modal-content">
@@ -45,32 +46,44 @@
     </div>
   </div>
 </div>
+<!-- Modal end for purchase btn -->
                
-            </div>
-            <div class="my-auto ms-0 py-5 w-50">
-                <button class="login-btn" style="background-color: #E76F51; float:right; color: white; padding: 10px 30px; margin-right: 50px; border-radius: 5px; border: none;">Login</button>
-                <img src="images/header-bike.png" alt="">
+  </div>
+            <div class="half-width col-md-6 my-5">
+                <button class="special-color-btn btn float-end border-0 py-2 px-3 me-5">Login</button>
+                <img class="img-fluid" src="images/header-bike.png" alt="">
             </div>
 
+            </div>
         </section>
     </header>
     <main>
-        <section class="container fetured-part mt-5">
-            <div class="text-center mb-5 ">
+        <section class="container fetured-part my-5 ">
+            <div class="text-center mb-5 fetured-text">
                 <h1 class="fw-bold">Fetured Bikes 2021</h1>
                 <p class="orange">Best bike collection</p>
             </div>
-            <div class="d-flex ">
-                <div class="m-5 p-3"><img class="img-fluid filter" src="images/feature-bike.jpg" alt=""></div>
-                <div class="m-5 p-3"><img class="img-fluid" src="images/feature-bike.jpg" alt=""></div>
-                <div class="m-5 p-3"><img class="img-fluid filter" src="images/feature-bike.jpg" alt=""></div>
+            <div class="row d-flex align-items-center">
+              <div class="feature col-md-4 p-5">
+                <img class="img-fluid filter" src="images/feature-bike.jpg" alt="">
+                
             </div>
+            <div class="feature col-md-4 p-5">
+              <img class="img-fluid" src="images/feature-bike.jpg" alt="">              
+          </div>
+          <div class="feature col-md-4 p-5">
+            <img class="img-fluid filter" src="images/feature-bike.jpg" alt="">
+            
+        </div>
+
+            </div>
+            
         </section>
         <section class="users-part container my-5">
             <h1 class="fw-bold text-center mb-5">Happy <span class="orange">Clients says</span></h1>
                       
-                  <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
+                  <div class="row d-flex align-items-center g-4">
+                    <div class="col-md-4">
                       <div class="card h-100 mx-3">
                         <img src="images/user-1.png" class="card-img-top user" alt="...">
                         <div class="card-body">
@@ -91,7 +104,7 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                       <div class="card h-100 mx-3">
                         <img src="images/user-2.png" class="card-img-top user" alt="...">
                         <div class="card-body">
@@ -112,7 +125,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                       <div class="card h-100 mx-3">
                         <img src="images/user-1.png" class="card-img-top user" alt="...">
                         <div class="card-body">
@@ -136,12 +149,12 @@
                   </div>
         </section>
        
-    <section class="feature-part container">
+    <section class="question-part container">
       <h1 class="fw-bold text-center my-5 py-5">Frequently Asked <span class="orange">Questions</span></h1>
-      <div class="d-flex">
-        <div class="w-50"><img class="img-fluid p-5 m-5" src="images/faq.png" alt="">
+      <div class="row d-flex asking-question">
+        <div class="col-md-6"><img class="img-fluid p-5 m-5" src="images/faq.png" alt="">
         </div>
-       <div class="w-50 p-5">
+       <div class="col-md-6">
         <div class="g-3 p-3 m-3 question">
           <h6>What are the most important things I should
             know about riding a bike?</h6>
@@ -166,13 +179,45 @@
       </div>
       
     </section>
+
+    <section class="container video">
+      <h1>Video Gallary</h1>
+      <div class="container">
+        <div class="row d-flex">
+          
+          <div class="col-md-6">
+            <iframe width="460" height="300" src="https://www.youtube.com/embed/iUCQVKbcOMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-6">
+            <iframe width="460" height="300" src="https://www.youtube.com/embed/LxdUQk1oJoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="container form">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Enter yor name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Write your massage</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+    </section>
         
 
     </main>
   
 
     <footer>
-
+      
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
